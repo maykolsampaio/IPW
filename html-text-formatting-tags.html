@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Formatação Textual HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+        .example {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        .code {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+        .result {
+            background-color: #e9f7ef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .function {
+            background-color: #eee8d5;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #d35400;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags de Formatação Textual HTML</h1>
+    
+    <p>HTML oferece diversas tags para formatação de texto. Esta página apresenta as principais tags com suas funções e exemplos de uso.</p>
+    
+    <h2>Cabeçalhos (h1 a h6)</h2>
+    <div class="function">
+        <strong>Função:</strong> Definir títulos e subtítulos hierárquicos em uma página. H1 é o título principal e mais importante, enquanto h6 é o menos importante. São fundamentais para acessibilidade e SEO.
+    </div>
+    <div class="example">
+        <div class="code">&lt;h1&gt;Cabeçalho Nível 1&lt;/h1&gt;
+&lt;h2&gt;Cabeçalho Nível 2&lt;/h2&gt;
+&lt;h3&gt;Cabeçalho Nível 3&lt;/h3&gt;
+&lt;h4&gt;Cabeçalho Nível 4&lt;/h4&gt;
+&lt;h5&gt;Cabeçalho Nível 5&lt;/h5&gt;
+&lt;h6&gt;Cabeçalho Nível 6&lt;/h6&gt;</div>
+        <div class="result">
+            <h1 style="margin: 10px 0; font-size: 24px;">Cabeçalho Nível 1</h1>
+            <h2 style="margin: 10px 0; font-size: 22px;">Cabeçalho Nível 2</h2>
+            <h3 style="margin: 10px 0; font-size: 20px;">Cabeçalho Nível 3</h3>
+            <h4 style="margin: 10px 0; font-size: 18px;">Cabeçalho Nível 4</h4>
+            <h5 style="margin: 10px 0; font-size: 16px;">Cabeçalho Nível 5</h5>
+            <h6 style="margin: 10px 0; font-size: 14px;">Cabeçalho Nível 6</h6>
+        </div>
+    </div>
+    
+    <h2>Parágrafo (p)</h2>
+    <div class="function">
+        <strong>Função:</strong> Criar blocos de texto separados, com espaçamento antes e depois. É o elemento básico para organizar conteúdo textual em uma página web.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Este é um exemplo de parágrafo em HTML. Parágrafos são usados para separar blocos de texto.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Este é um exemplo de parágrafo em HTML. Parágrafos são usados para separar blocos de texto.</p>
+        </div>
+    </div>
+    
+    <h2>Negrito (strong, b)</h2>
+    <div class="function">
+        <strong>Função:</strong> <strong>Tag strong</strong> - Indica que o texto tem forte importância, seriedade ou urgência. Possui valor semântico. <br>
+        <strong>Tag b</strong> - Aplica estilo de negrito ao texto sem adicionar significado semântico especial.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Este texto tem &lt;strong&gt;forte importância&lt;/strong&gt; usando a tag strong.&lt;/p&gt;
+&lt;p&gt;Este texto está em &lt;b&gt;negrito&lt;/b&gt; usando a tag b.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Este texto tem <strong>forte importância</strong> usando a tag strong.</p>
+            <p>Este texto está em <b>negrito</b> usando a tag b.</p>
+        </div>
+    </div>
+    
+    <h2>Itálico (em, i)</h2>
+    <div class="function">
+        <strong>Função:</strong> <strong>Tag em</strong> - Indica ênfase no texto, alterando o significado da frase. Possui valor semântico. <br>
+        <strong>Tag i</strong> - Aplica estilo itálico ao texto sem adicionar significado semântico especial. Usado para termos técnicos, expressões idiomáticas, etc.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Este texto tem &lt;em&gt;ênfase&lt;/em&gt; usando a tag em.&lt;/p&gt;
+&lt;p&gt;Este texto está em &lt;i&gt;itálico&lt;/i&gt; usando a tag i.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Este texto tem <em>ênfase</em> usando a tag em.</p>
+            <p>Este texto está em <i>itálico</i> usando a tag i.</p>
+        </div>
+    </div>
+    
+    <h2>Sublinhado (u)</h2>
+    <div class="function">
+        <strong>Função:</strong> Aplicar sublinhado ao texto. Geralmente usado para indicar erros ortográficos ou nomes próprios em chinês. Deve ser usado com moderação, pois pode ser confundido com links.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Este texto está &lt;u&gt;sublinhado&lt;/u&gt; usando a tag u.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Este texto está <u>sublinhado</u> usando a tag u.</p>
+        </div>
+    </div>
+    
+    <h2>Tachado (s, del)</h2>
+    <div class="function">
+        <strong>Função:</strong> <strong>Tag s</strong> - Representa texto que não é mais relevante ou preciso. <br>
+        <strong>Tag del</strong> - Indica texto que foi deletado ou removido, frequentemente usado em controle de alterações.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Este texto está &lt;s&gt;tachado&lt;/s&gt; usando a tag s.&lt;/p&gt;
+&lt;p&gt;Este texto foi &lt;del&gt;deletado&lt;/del&gt; usando a tag del.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Este texto está <s>tachado</s> usando a tag s.</p>
+            <p>Este texto foi <del>deletado</del> usando a tag del.</p>
+        </div>
+    </div>
+    
+    <h2>Sobrescrito (sup) e Subscrito (sub)</h2>
+    <div class="function">
+        <strong>Função:</strong> <strong>Tag sup</strong> - Exibe texto como sobrescrito, acima da linha base. Usado para expoentes, notas de rodapé, etc. <br>
+        <strong>Tag sub</strong> - Exibe texto como subscrito, abaixo da linha base. Usado em fórmulas químicas, notações matemáticas, etc.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Fórmula química da água: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;p&gt;Equação matemática: E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</div>
+        <div class="result">
+            <p>Fórmula química da água: H<sub>2</sub>O</p>
+            <p>Equação matemática: E = mc<sup>2</sup></p>
+        </div>
+    </div>
+    
+    <h2>Texto pequeno (small)</h2>
+    <div class="function">
+        <strong>Função:</strong> Representar comentários laterais ou letras pequenas, como direitos autorais, avisos legais ou outros textos que são menos importantes que o texto principal.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Texto normal com &lt;small&gt;texto pequeno&lt;/small&gt; usando a tag small.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Texto normal com <small>texto pequeno</small> usando a tag small.</p>
+        </div>
+    </div>
+    
+    <h2>Citação (blockquote, q)</h2>
+    <div class="function">
+        <strong>Função:</strong> <strong>Tag blockquote</strong> - Indicar que o texto é uma citação longa de outra fonte. Geralmente renderizado como um bloco recuado. <br>
+        <strong>Tag q</strong> - Usado para citações curtas, inline. Os navegadores geralmente adicionam aspas automaticamente.
+    </div>
+    <div class="example">
+        <div class="code">&lt;blockquote&gt;Esta é uma citação em bloco usando a tag blockquote.&lt;/blockquote&gt;
+&lt;p&gt;Sócrates disse: &lt;q&gt;Só sei que nada sei&lt;/q&gt; usando a tag q.&lt;/p&gt;</div>
+        <div class="result">
+            <blockquote style="margin-left: 20px; padding-left: 10px; border-left: 3px solid #ccc;">Esta é uma citação em bloco usando a tag blockquote.</blockquote>
+            <p>Sócrates disse: <q>Só sei que nada sei</q> usando a tag q.</p>
+        </div>
+    </div>
+    
+    <h2>Código (code)</h2>
+    <div class="function">
+        <strong>Função:</strong> Representar código de computador ou nomes de arquivos dentro de um texto. Normalmente exibido em uma fonte monoespaçada.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;A função &lt;code&gt;console.log()&lt;/code&gt; é usada para imprimir mensagens no console.&lt;/p&gt;</div>
+        <div class="result">
+            <p>A função <code>console.log()</code> é usada para imprimir mensagens no console.</p>
+        </div>
+    </div>
+    
+    <h2>Texto pré-formatado (pre)</h2>
+    <div class="function">
+        <strong>Função:</strong> Preservar espaços em branco, quebras de linha e tabulações exatamente como escritos no código HTML. Útil para mostrar código, poesia ou outros textos onde a formatação é importante.
+    </div>
+    <div class="example">
+        <div class="code">&lt;pre&gt;
+  Este texto mantém
+    a formatação
+      exatamente como
+    está escrito.
+&lt;/pre&gt;</div>
+        <div class="result">
+            <pre>  Este texto mantém
+    a formatação
+      exatamente como
+    está escrito.</pre>
+        </div>
+    </div>
+    
+    <h2>Marca-texto (mark)</h2>
+    <div class="function">
+        <strong>Função:</strong> Destacar ou marcar texto para referência, como se fosse um marca-texto. Útil para enfatizar partes de texto relevantes para o contexto atual.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Use a tag mark para &lt;mark&gt;destacar&lt;/mark&gt; partes importantes do texto.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Use a tag mark para <mark>destacar</mark> partes importantes do texto.</p>
+        </div>
+    </div>
+    
+    <h2>Abreviação (abbr)</h2>
+    <div class="function">
+        <strong>Função:</strong> Indicar uma abreviação ou sigla e fornecer sua explicação completa no atributo title, que aparece como dica quando o usuário passa o mouse sobre o elemento.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;A &lt;abbr title="Organização das Nações Unidas"&gt;ONU&lt;/abbr&gt; foi fundada em 1945.&lt;/p&gt;</div>
+        <div class="result">
+            <p>A <abbr title="Organização das Nações Unidas" style="border-bottom: 1px dotted;">ONU</abbr> foi fundada em 1945. (Passe o mouse sobre a sigla)</p>
+        </div>
+    </div>
+    
+    <h2>Texto bidirecional (bdo)</h2>
+    <div class="function">
+        <strong>Função:</strong> Substituir a direcionalidade do texto, permitindo exibir texto da direita para a esquerda (rtl) ou da esquerda para a direita (ltr). Útil para idiomas como árabe e hebraico.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Texto normal&lt;/p&gt;
+&lt;p&gt;&lt;bdo dir="rtl"&gt;Texto invertido da direita para a esquerda&lt;/bdo&gt;&lt;/p&gt;</div>
+        <div class="result">
+            <p>Texto normal</p>
+            <p><bdo dir="rtl">Texto invertido da direita para a esquerda</bdo></p>
+        </div>
+    </div>
+    
+    <h2>Definição (dfn)</h2>
+    <div class="function">
+        <strong>Função:</strong> Indicar o termo que está sendo definido dentro de uma definição ou descrição. Geralmente renderizado em itálico. Útil para glossários ou quando se introduz um novo conceito.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Um &lt;dfn&gt;algoritmo&lt;/dfn&gt; é um conjunto de instruções para realizar uma tarefa.&lt;/p&gt;</div>
+        <div class="result">
+            <p>Um <dfn>algoritmo</dfn> é um conjunto de instruções para realizar uma tarefa.</p>
+        </div>
+    </div>
+
+    <h2>Quebra de linha (br)</h2>
+    <div class="function">
+        <strong>Função:</strong> Inserir uma quebra de linha sem iniciar um novo parágrafo. Útil em poesias, endereços ou onde quebras de linha específicas são necessárias.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Primeira linha&lt;br&gt;Segunda linha&lt;/p&gt;</div>
+        <div class="result">
+            <p>Primeira linha<br>Segunda linha</p>
+        </div>
+    </div>
+
+    <h2>Linha horizontal (hr)</h2>
+    <div class="function">
+        <strong>Função:</strong> Criar uma linha horizontal que separa visualmente conteúdo em uma página. Representa uma quebra temática ou transição entre assuntos.
+    </div>
+    <div class="example">
+        <div class="code">&lt;p&gt;Texto antes da linha&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Texto depois da linha&lt;/p&gt;</div>
+        <div class="result">
+            <p>Texto antes da linha</p>
+            <hr>
+            <p>Texto depois da linha</p>
+        </div>
+    </div>
+
+    <footer style="margin-top: 40px; text-align: center; border-top: 1px solid #ddd; padding-top: 20px;">
+        <p>Criado com HTML para demonstrar tags de formatação textual</p>
+    </footer>
+</body>
+</html>
